@@ -1,6 +1,6 @@
 # Office UI Fabric React Snippets
 
-This extension contains code snippets for [Office UI Fabric React](https://github.com/OfficeDev/office-ui-fabric-react) and it's styling library mergeStyles.
+This extension contains code snippets for creating components for [Office UI Fabric React](https://github.com/OfficeDev/office-ui-fabric-react) and it's styling library mergeStyles.
 
 ## Installation
 
@@ -19,9 +19,9 @@ When creating a new Fabric React component, or converting an old one from sass, 
 
 Below is a list of all available snippets and the triggers for each one.
 
-| File-type | Trigger            | Content                                                        |
-| --------: | ------------------ | -------------------------------------------------------------- |
-|       .ts | `IComponentProps→` | Scaffolds your Component.types.ts file.                        |
-|       .ts | `getStyles→`       | Scaffolds your Component.styles.ts file with common classNames |
-|      .tsx | `styled→`          | Scaffolds your Component.tsx file                              |
-|      .tsx | `getClassNames→`   | Imports your styles (for Component.base.tsx file)              |
+| File-type | Trigger                   | Content                                                        |
+| --------: | ------------------------- | -------------------------------------------------------------- |
+|       .ts | `fabric-IComponentProps→` | Scaffolds your Component.types.ts file.                        |
+|       .ts | `fabric-getStyles→`       | Scaffolds your Component.styles.ts file with common classNames |
+|      .tsx | `fabric-styled→`          | Scaffolds your Component.tsx file                              |
+|      .tsx | `fabric-getClassNames→`   | Imports your styles (for Component.base.tsx file)              |
