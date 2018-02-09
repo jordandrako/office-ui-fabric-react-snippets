@@ -1,6 +1,6 @@
 {
   "Styled_Component": {
-    "prefix": "styled",
+    "prefix": "fabric-styled",
     "body": [
       "import { styled } from '@uifabric/utilities';",
       "import {",
@@ -20,7 +20,7 @@
     "description": "Component with mergeStyles"
   },
   "classNamesFunction": {
-    "prefix": "getClassNames",
+    "prefix": "fabric-getClassNames",
     "body": [
       "import {",
       "  I${1:Component}StyleProps,",

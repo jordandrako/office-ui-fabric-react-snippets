@@ -1,6 +1,6 @@
 {
   "IComponentProps": {
-    "prefix": "IComponentProps",
+    "prefix": "fabric-IComponentProps",
     "body": [
       "import * as React from 'react';",
       "import { ${1:Component}Base } from './${1:Component}.base';",
@@ -57,7 +57,7 @@
     ]
   },
   "Component_Styles": {
-    "prefix": "getStyles",
+    "prefix": "fabric-getStyles",
     "body": [
       "import { I${1:Component}StyleProps, I${1:Component}Styles } from './${1:Component}.types';",
       "import {",
