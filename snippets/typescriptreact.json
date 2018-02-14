@@ -2,7 +2,7 @@
   "Styled_Component": {
     "prefix": "fabric-styled",
     "body": [
-      "import { styled } from '@uifabric/utilities';",
+      "import { styled } from '../../Utilities';",
       "import {",
       "  I${1:Component}Props,",
       "  I${1:Component}StyleProps,",
@@ -26,11 +26,23 @@
       "  I${1:Component}StyleProps,",
       "  I${1:Component}Styles,",
       "} from  './${1:Component}.types';",
-      "import { classNamesFunction } from '@uifabric/utilities';",
+      "import { classNamesFunction } from '../../Utilities';",
       "",
       "const getClassNames = classNamesFunction<I${1:Component}StyleProps, I${1:Component}Styles>();",
       "$2"
     ],
     "description": "getClassNames function to convert classNames to strings."
+  },
+  "classNamesConst": {
+    "prefix": "fabric-classNamesConst",
+    "body": [
+      "const { getStyles, theme } = this.props;",
+      "const classNames = getClassNames(getStyles!, {",
+      "  theme: theme!,",
+      "  className,",
+      "  ${1}",
+      "});"
+    ],
+    "description": "Deconstruct getStyles and theme from props, and create classNames object for use in Render functions."
   }
 }
