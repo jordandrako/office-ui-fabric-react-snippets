@@ -26,10 +26,15 @@
       "  I${1:Component}StyleProps,",
       "  I${1:Component}Styles,",
       "} from  './${1:Component}.types';",
-      "import { classNamesFunction } from '../../Utilities';",
+      "import {",
+      "  classNamesFunction,",
+      "  customizable,",
+      "} from '../../Utilities';",
       "",
       "const getClassNames = classNamesFunction<I${1:Component}StyleProps, I${1:Component}Styles>();",
-      "$2"
+      "",
+      "// Move @customizable decorator to line before your exported class.",
+      "@customizable('${1:Component}', ['theme'])"
     ],
     "description": "getClassNames function to convert classNames to strings."
   },
@@ -43,6 +48,7 @@
       "  ${1}",
       "});"
     ],
-    "description": "Deconstruct getStyles and theme from props, and create classNames object for use in Render functions."
+    "description":
+      "Deconstruct getStyles and theme from props, and create classNames object for use in Render functions."
   }
 }
