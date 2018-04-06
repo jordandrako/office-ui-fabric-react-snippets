@@ -11,11 +11,13 @@
       "import { ${1:Component}Base } from './${1:Component}.base';",
       "import { getStyles } from './${1:Component}.styles';",
       "",
+      "/**",
+      "* Insert short {1:Component} description",
+      "*/",
       "export const ${1:Component} = styled<I${1:Component}Props, I${1:Component}StyleProps, I${1:Component}Styles>(",
       "  ${1:Component}Base,",
       "  getStyles",
-      ");",
-      "$2"
+      ");"
     ],
     "description": "Component with mergeStyles"
   },
@@ -33,7 +35,11 @@
       "",
       "const getClassNames = classNamesFunction<I${1:Component}StyleProps, I${1:Component}Styles>();",
       "",
-      "// Move @customizable decorator to line before your exported class.",
+      "// Move below lines to the line before ${1:Component}Base class.",
+      "/**",
+      "* {1:Component} with no default styles.",
+      "* [Use the `getStyles` API to add your own styles.](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Styling)",
+      "*/",
       "@customizable('${1:Component}', ['theme'])"
     ],
     "description": "getClassNames function to convert classNames to strings."
@@ -42,13 +48,13 @@
     "prefix": "fabric-classNamesConst",
     "body": [
       "const { getStyles, theme } = this.props;",
-      "const classNames = getClassNames(getStyles!, {",
+      "const classNames = getClassNames(getStyles, {",
       "  theme: theme!,",
       "  className,",
+      "  // Other style props",
       "  ${1}",
       "});"
     ],
-    "description":
-      "Deconstruct getStyles and theme from props, and create classNames object for use in Render functions."
+    "description": "Deconstruct getStyles and theme from props, and create classNames object for use in Render functions. Pass an object of style props as an argument."
   }
 }
