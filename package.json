@@ -3,8 +3,9 @@
     "displayName": "Office UI Fabric React Component Snippets",
     "publisher": "jordanjanzen",
     "description": "Snippets for Fabric React and mergeStyles",
-    "version": "0.1.5",
+    "version": "1.1.0",
     "repository": "https://github.com/jordandrako/office-ui-fabric-react-snippets",
+    "icon": "icon.png",
     "engines": {
         "vscode": "^0.10.x"
     },
