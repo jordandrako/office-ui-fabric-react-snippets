@@ -12,7 +12,7 @@
       "import { getStyles } from './${1:Component}.styles';",
       "",
       "/**",
-      "* Insert short {1:Component} description",
+      "* ${1:Component} description",
       "*/",
       "export const ${1:Component} = styled<I${1:Component}Props, I${1:Component}StyleProps, I${1:Component}Styles>(",
       "  ${1:Component}Base,",
@@ -37,7 +37,7 @@
       "",
       "// Move below lines to the line before ${1:Component}Base class.",
       "/**",
-      "* {1:Component} with no default styles.",
+      "* ${1:Component} with no default styles.",
       "* [Use the `getStyles` API to add your own styles.](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Styling)",
       "*/",
       "@customizable('${1:Component}', ['theme'])"
