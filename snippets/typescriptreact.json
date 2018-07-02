@@ -3,25 +3,19 @@
     "prefix": "fabric-styledComponent",
     "body": [
       "import { styled } from '../../Utilities';",
-      "import {",
-      "  I${1:ComponentName}Props,",
-      "  I${1:ComponentName}StyleProps,",
-      "  I${1:ComponentName}Styles",
-      "} from './${1:ComponentName}.types';",
+      "import { I${1:ComponentName}Props, I${1:ComponentName}StyleProps, I${1:ComponentName}Styles } from './${1:ComponentName}.types';",
       "import { ${1:ComponentName}Base } from './${1:ComponentName}.base';",
-      "import { getStyles } from './${1:ComponentName}.styles';",
+      "import { styles } from './${1:ComponentName}.styles';",
       "",
       "/**",
       " * ${1:ComponentName} description",
       " */",
-      "export const ${1:ComponentName} = styled<I${1:ComponentName}Props, I${1:ComponentName}StyleProps, I${1:ComponentName}Styles>(",
-      "  ${1:ComponentName}Base,",
-      "  getStyles",
-      ");"
+      "export const ${1:ComponentName} = styled<I${1:ComponentName}Props, I${1:ComponentName}StyleProps, I${1:ComponentName}Styles>(${1:ComponentName}Base, styles);"
     ],
-    "description": "Generates styled component file for making variants of Component Base."
+    "description":
+      "Generates styled component file for making variants of Component Base. Remember to modify the component description comment."
   },
-  "Generates base functions for enabling themes and getStyles API": {
+  "Generates base functions for enabling themes and styles API": {
     "prefix": "fabric-classNamesFunction",
     "body": [
       "import {",
@@ -38,26 +32,23 @@
       "// Move below lines to the line before ${1:ComponentName}Base class.",
       "/**",
       " * ${1:ComponentName} with no default styles.",
-      " * [Use the `getStyles` API to add your own styles.](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Styling)",
+      " * [Use the `styles` API to add your own styles.](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Component-Styling)",
       "*/",
       "@customizable('${1:ComponentName}', ['theme'])"
     ],
-    "description": "Generates base functions for enabling themes and getStyles API"
+    "description":
+      "Generates base functions for enabling themes and styles API. Remember to modify the component description comment."
   },
   "Generates base for getting your classNames from the styles file.": {
     "prefix": "fabric-classNamesConst",
     "body": [
-      "const {",
-      "  getStyles,",
-      "  theme",
-      "} = this.props;",
-      "",
-      "const classNames = getClassNames(getStyles, {",
-      "  theme: theme!,",
-      "  className,",
+      "const classNames = getClassNames(this.props.styles, {",
+      "  theme: this.props.theme!,",
+      "  className: this.props.className,",
       "  // Other style props",
       "});"
     ],
-    "description": "Generates base for getting your classNames from the styles file."
+    "description":
+      "Generates base for getting your classNames from the styles file."
   }
 }

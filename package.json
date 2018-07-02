@@ -1,27 +1,27 @@
 {
-    "name": "office-ui-fabric-react-snippets",
-    "displayName": "Office UI Fabric React Component Snippets",
-    "publisher": "jordanjanzen",
-    "description": "Snippets for Fabric React and mergeStyles",
-    "version": "1.1.7",
-    "repository": "https://github.com/jordandrako/office-ui-fabric-react-snippets",
-    "icon": "icon.png",
-    "engines": {
-        "vscode": "^0.10.x"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "typescript",
-                "path": "./snippets/typescript.json"
-            },
-            {
-                "language": "typescriptreact",
-                "path": "./snippets/typescriptreact.json"
-            }
-        ]
-    }
+  "name": "office-ui-fabric-react-snippets",
+  "displayName": "Office UI Fabric React Component Snippets",
+  "publisher": "jordanjanzen",
+  "description": "Snippets for Fabric React and mergeStyles",
+  "version": "1.2.0",
+  "repository": "https://github.com/jordandrako/office-ui-fabric-react-snippets",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^0.10.x"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/typescriptreact.json"
+      }
+    ]
+  }
 }
